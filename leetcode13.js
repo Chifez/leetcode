@@ -9,6 +9,7 @@ const findWords = (words) => {
     for (let key of row) {
       for (let j = 0; j < words[i].length; j++) {
         if (key.indexOf(words[i][j].toLowerCase()) == -1) {
+          // i need to understand what happens here
           found = false;
           break;
         }
